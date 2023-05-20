@@ -32,11 +32,11 @@ st.write("""Predicting R-1901 ART using XGBoost ML Model""")
 
 
 operation_mode=st.sidebar.selectbox("Select your mode of operation",("100D","150D","500D"))
-Feed = float(st.text_input('Unit 19 current feed'))
-LBO_VI = float(st.text_input('Input your desired VI'))
-LBO_KV100 = float(st.text_input('Select your desired KV100'))
-ART_R2 = float(st.text_input('Select your current R1902 ART'))
-PP = float(st.text_input('Input your desired PP'))
+Feed = float(st.number_input('Unit 19 current feed'))
+LBO_VI = float(st.number_input('Input your desired VI'))
+LBO_KV100 = float(st.number_input('Select your desired KV100'))
+ART_R2 = float(st.number_input('Select your current R1902 ART'))
+PP = float(st.number_input('Input your desired PP'))
 
 X=np.array([[Feed,LBO_VI,LBO_KV100,ART_R2,PP]])
 
