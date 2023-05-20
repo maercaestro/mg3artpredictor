@@ -6,13 +6,13 @@ import pandas as pd
 from PIL import Image
 
 v1ss_reg=xgb.XGBRegressor()
-v1ss_reg.load_model(r'/Users/abuhuzaifahbidin/Documents/MG3 ART Predictor Project/XGBoost Predictor/100Dxgb.json')
+v1ss_reg.load_model('100Dxgb.json')
 
 v2ss_reg=xgb.XGBRegressor()
-v2ss_reg.load_model(r'/Users/abuhuzaifahbidin/Documents/MG3 ART Predictor Project/XGBoost Predictor/150Dxgb.json')
+v2ss_reg.load_model('150Dxgb.json')
 
 v3ss_reg=xgb.XGBRegressor()
-v3ss_reg.load_model(r'/Users/abuhuzaifahbidin/Documents/MG3 ART Predictor Project/XGBoost Predictor/500Dxgb.json')
+v3ss_reg.load_model('500Dxgb.json')
 
 image=Image.open('MEGATLogo.png')
 
