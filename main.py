@@ -7,13 +7,13 @@ from PIL import Image
 import datetime
 
 v1ss_reg=xgb.XGBRegressor()
-v1ss_reg.load_model('100Dxgb.json')
+v1ss_reg.load_model('100Dxgbnew.json')
 
 v2ss_reg=xgb.XGBRegressor()
-v2ss_reg.load_model('150Dxgb.json')
+v2ss_reg.load_model('150Dxgbnew.json')
 
 v3ss_reg=xgb.XGBRegressor()
-v3ss_reg.load_model('500Dxgb.json')
+v3ss_reg.load_model('500Dxgbnew.json')
 
 image=Image.open('MEGATLogo.png')
 
